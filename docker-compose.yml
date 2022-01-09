@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "vanssb/flask-webservice"
+    ports:
+      - 9080:9080
+    volumes:
+      - .:/app
